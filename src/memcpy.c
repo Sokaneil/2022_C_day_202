@@ -8,14 +8,14 @@
 
 void *stu_memcpy(void *dest, const void *src, unsigned int n)
 {
-    int i;
+    unsigned int i;
     char *str_dest;
     char *str_src;
 
     i = 0;
     str_dest = (char *) dest;
     str_src = (char *) src;
-    while (i < (int) n) {
+    while (i < n) {
         str_dest[i] = str_src[i];
         i += 1;
     }
